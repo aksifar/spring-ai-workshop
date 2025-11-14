@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/vacation")
-public class VaccationController {
+public class VacationController {
 
     private final ChatClient chatClient;
 
-    public VaccationController(@Qualifier("openAIChatClient")ChatClient chatClient) {
+    public VacationController(@Qualifier("openAIChatClient")ChatClient chatClient) {
         this.chatClient = chatClient;
     }
 
