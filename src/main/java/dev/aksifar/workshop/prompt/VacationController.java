@@ -1,6 +1,5 @@
 package dev.aksifar.workshop.prompt;
 
-import dev.aksifar.workshop.model.Itinerary;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +12,7 @@ public class VacationController {
 
     private final ChatClient chatClient;
 
-    public VacationController(@Qualifier("openAIChatClient")ChatClient chatClient) {
+    public VacationController(@Qualifier("openAIChatClient") ChatClient chatClient) {
         this.chatClient = chatClient;
     }
 
@@ -24,9 +23,5 @@ public class VacationController {
                 .user("I am going to London for 3 days, please provide me with a compact itinerary.")
                 .call()
                 .entity(Itinerary.class);
-
-
     }
-
-
 }

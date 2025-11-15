@@ -1,4 +1,4 @@
-package dev.aksifar.workshop.model;
+package dev.aksifar.workshop.prompt;
 
 import java.util.List;
 
