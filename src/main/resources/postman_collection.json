@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "4e746428-972e-4c11-ab48-2727f6038f7b",
+		"name": "Spring AI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5222709"
+	},
+	"item": [
+		{
+			"name": "Blocking call",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/chat",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Streaming call",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/stream",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Full response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/joke",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"joke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bank chat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/bank/chat/who is nicholas cage",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bank",
+						"chat",
+						"who is nicholas cage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vaccation structured",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vacation/structured",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vacation",
+						"structured"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image detection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/image-to-text",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"image-to-text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image Genration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/image-generate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"image-generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image Genration w prompt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/image-generate?prompt=most spiritual place in the world",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"image-generate"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "most spiritual place in the world"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Audio Generation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/speak",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"speak"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Memory Chat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/memory-chat?message=what is my name",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"memory-chat"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "what is my name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RAG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/rag/models",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rag",
+						"models"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MCP Tools  Datetime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tools",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tools"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MCP Create Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tasks?message=create anew task with title watch and assignee Ankit and status PENDING and decrition as replcae battery",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "create anew task with title watch and assignee Ankit and status PENDING and decrition as replcae battery"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MCP Update Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tasks?message=update the task with id 1 to change status to in progress",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "update the task with id 1 to change status to in progress"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
